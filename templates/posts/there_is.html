@@ -1,72 +1,58 @@
-<template name="there_is">
-{{#markdown}}
+{% extends "base.html" %}
+{% block body %}
 
-#There (is)
-<br>
+<div id="main">
+  <div class="header">
+      <h1>There (is)</h1>
+  </div>
 
-**There is ~**の形は”〜がある”という意味で、通常の名詞のようにどんな時制にも使えます。
-通常be動詞は主語によって変わりますが、この場合は"There is/are"の後の名詞が単数か複数かによって何のbe動詞を使うかが決まります。
+  <div class="content">
 
+  	<p><span class="inline">There is ~</span>の形は”〜がある”という意味で、通常の名詞のようにどんな時制にも使えます。<span class="inline">There is/are</span>の後の名詞が主語になるので、その主語が単数か複数かによって何のbe動詞を使うかが決まります。</p>
 
-<hr>
+    <h2>現在形</h2>
 
-####現在形
+    <div class="grammar"><p align="center">There is/are　＋　(not)　＋　名詞</p></div>
 
-	There is/are　＋　(not)　＋　名詞フレーズ
+    <p>後に続く名詞が複数の場合は<span class="inline">There are</span>になります。</p>
 
-後に続く名詞フレーズが複数の場合はThere areになります。
+    <p>例</p>
 
-例
+	  <p class="example">There is a coffee shop on campus.</p>
+		<p class="translation">大学の構内に喫茶店があります。</p>
+	  <p class="example">There are many people in this room.</p>
+		<p class="translation">この部屋には人がいっぱいいます。</p>
+	  <p class="example">There are not many people in this room.</p>
+		<p class="translation">この部屋にはそんなに人がいません。</p>
 
-There is a coffee shop on campus.
+		<h2>過去形</h2>
 
-大学の構内に喫茶店があります。
+    <div class="grammar"><p align="center">There　＋　was/were　＋　(not)　＋　名詞</p></div>
 
-There are many people in this room.
+    <p>例</p>
 
-この部屋には人がいっぱいいます。
+	  <p class="example">There were 10 people at the party.</p>
+		<p class="translation">パーティには１０人いました。</p>
 
-There are not many people in this room.
+		<h2>疑問文</h2>
 
-この部屋にはそんなに人がいません。
+    <div class="grammar"><p align="center">Is/Are/Was/Were　＋　there　＋　名詞</p></div>
 
-<hr>
+    <p>例</p>
 
-####過去形
+	  <p class="example">Is there a coffee shop on campus?</p>
+		<p class="translation">大学の構内に喫茶店はありますか？</p>
 
-	There　＋　was/were　＋　(not)　＋　名詞フレーズ
+		<h2>助動詞</h2>
 
-例
+    <div class="grammar"><p align="center">There　＋　助動詞　＋　(not)　＋　be　＋　名詞</p></div>
 
-There were 10 people at the party.
+    <p>例</p>
 
-パーティには１０人いました。
+	  <p class="example">There might be a coffee shop on campus.</p>
+		<p class="translation">大学の構内に喫茶店があるかもしれない。</p>
 
+  </div>
+</div>
 
-<hr>
-
-####疑問文
-
-	Is/Are/Was/Were　＋　there　＋　名詞フレーズ
-
-例
-
-Is there a coffee shop on campus?
-
-大学の構内に喫茶店はありますか？
-
-<hr>
-
-####助動詞
-
-	There　＋　助動詞　＋　(not)　＋　be　＋　名詞フレーズ
-
-例
-
-There might be a coffee shop on campus.
-
-大学の構内に喫茶店があるかもしれない。
-
-
-{{/markdown}}
-</template>
+{% endblock %}
