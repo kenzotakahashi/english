@@ -1,52 +1,42 @@
-<template name="must">
-{{#markdown}}
+{% extends "base.html" %}
+{% block body %}
 
-#must
-<br>
+<div id="main">
+  <div class="header">
+      <h1>must</h1>
+  </div>
 
-mustは２つの意味があります。１つは、”〜に違いない”という強い確信を表す時です。
-もう１つは”〜しなければならない”という意味ですが、普段は”have to (do)”を使う事がほとんどです。
+  <div class="content">
 
-###肯定文、否定文
+  	<p><span class="inline">must</span>は”〜に違いない”という意味です。</p>
 
-	主語　＋　must (not)　＋　	動詞原型
+    <h2>肯定文、否定文</h2>
 
-be動詞の形/現在進行形
+    <div class="grammar"><p align="center">名詞　＋　must (not)　＋　	動詞原型</p></div>
 
-	主語　＋　must (not) be　＋　名詞フレーズ/形容詞/動詞+ing
+    <p>be動詞の形と現在進行形を使う時は、原形<span class="inline">be</span>を使います。</p>
 
-be動詞の形と現在進行形を使う時は、be動詞にbeを使います。
+    <p>例</p>
 
-例
+	  <p class="example">You haven't eaten anything today. You must be hungry.</p>
+		<p class="translation">あなたは今日何も食べていない。あなたはお腹が減っているに違いない。</p>
+	  <p class="example">you must be Emily. Fred has told me about you.</p>
+		<p class="translation">あなたはエミリーに違いない。フレッドがあなたの事を私に伝えてくれたことがあります。（あなたのことはフレッドから聞いています。）</p>
+	  <p class="example">She must not be at home.</p>
+		<p class="translation">彼女は家にいないに違いない。</p>
 
-You haven't eaten anything today. You must be hungry.
+		<h2>過去形、完了形</h2>
 
-あなたは今日何も食べていない。あなたはお腹が減っているに違いない。
+		<div class="grammar"><p align="center">名詞　＋　must (not) have　＋　動詞過去完了形</p></div>
 
-you must be Emily. Fred has told me about you.
+		<p>例</p>
 
-あなたはエミリーに違いない。フレッドがあなたの事を私に伝えてくれたことがあります。（あなたのことはフレッドから聞いています。）
+	  <p class="example">She looks great. She must have lost her weight.</p>
+		<p class="translation">彼女は素晴らしく見える。（彼女は美しい。）彼女は痩せたに違いない。</p>
+	  <p class="example">You must have been busy.</p>
+		<p class="translation">あなたは忙しかったに違いない。</p>
 
-She must not be at home.
+  </div>
+</div>
 
-彼女は家にいないに違いない。
-
-<hr>
-
-###過去形、完了形
-
-	主語　＋　must (not) have　＋　動詞過去完了形
-
-例
-
-She looks great. She must have lost her weight.
-
-彼女は素晴らしく見える。（彼女は美しい。）彼女は痩せたに違いない。
-
-You must have been busy.
-
-あなたは忙しかったに違いない。
-
-
-{{/markdown}}
-</template>
+{% endblock %}

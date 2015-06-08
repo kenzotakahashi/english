@@ -1,30 +1,28 @@
-<template name="may">
-{{#markdown}}
+{% extends "base.html" %}
+{% block body %}
 
-#may
-<br>
+<div id="main">
+  <div class="header">
+      <h1>may</h1>
+  </div>
 
-mayはmightと似た意味を持つので、mightを使える場面では大抵mayも使えます。
-mayはcanと似た使い方をすることも出来ます。canよりも少し固い表現になります。
+  <div class="content">
 
-例
+  	<p><span class="inline">may</span>は<span class="inline">might</span>と似た意味を持つので、<span class="inline">might</span>を使える場面では大抵<span class="inline">may</span>も使えます。<span class="inline">may</span>は<span class="inline">can</span>と似た使い方をすることも出来ます。<span class="inline">can</span>よりも少し固い表現になります。</p>
 
-You may leave now.
+    <p>例</p>
 
-もう出て大丈夫です。
+	  <p class="example">You may leave now.</p>
+		<p class="translation">もう出て大丈夫です。</p>
+	  <p class="example">You may not call in the hospital.</p>
+		<p class="translation">この病院の中では電話してはいけません。</p>
 
-You may not call in the hospital.
+		<p><span class="inline">May I/we ~</span>は”〜してもいいですか？”という意味です。<span class="inline">may</span>を疑問文で使う時は<span class="inline">I</span>と<span class="inline">we</span>しか使えないので注意しましょう。<span class="inline">can</span>のように<span class="inline">May you ~</span>などの表現をすることは出来ません。</p>
 
-この病院の中では電話してはいけません。
+	  <p class="example">May I come in?</p>
+		<p class="translation">入ってもよろしいでしょうか？</p>
 
-<hr>
+  </div>
+</div>
 
-"May I/we ~"は”〜してもいいですか？”という意味です。mayを疑問文で使う時は"I"と"we"しか使えないので注意しましょう。
-canのように”May you ~"などの表現をすることは出来ません。
-
-May I come in?
-
-入ってもよろしいでしょうか？
-
-{{/markdown}}
-</template>
+{% endblock %}

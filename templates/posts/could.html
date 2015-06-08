@@ -1,85 +1,66 @@
-<template name="could">
-{{#markdown}}
+{% extends "base.html" %}
+{% block body %}
 
-#could
-<br>
+<div id="main">
+  <div class="header">
+      <h1>could</h1>
+  </div>
 
-couldはcanの過去形ですが、それ以外の使い方の方が多いです。
+  <div class="content">
 
-###肯定文
+  	<p><span class="inline">could</span>は<span class="inline">can</span>の過去形ですが、それ以外の使い方の方が多いです。</p>
 
-	主語　＋　could　＋　動詞原形
+    <h2>肯定文</h2>
 
-例
+    <div class="grammar"><p align="center">名詞　＋　could　＋　動詞原形</p></div>
 
-I could see the stars an hour ago.
+	  <p class="example">I could see the stars an hour ago.</p>
+		<p class="translation">１時間前に星が見えました。</p>
+		<hr>
+	  <p class="example">(Julia) What are you doing this weekend?</p>
+		<p class="translation">今週末何してるの？</p>
+	  <p class="example">(Travis) I could stay home and relax.</p>
+		<p class="translation">家でリラックスすることは出来るな。</p>
+		<p>ここでの<span class="inline">could</span>は”選択肢”や”可能性”という意味で使われています。</p>
 
-１時間前に星が見えました。
+		<h2>否定文</h2>
 
-<hr>
+		<div class="grammar"><p align="center">名詞　＋　could not　＋　動詞原形</p></div>
 
-(Julia) What are you doing this weekend?
+		<p><span class="inline">could not</span>は<span class="inline">couldn't</span>に省略出来ます。</p>
 
-今週末何してるの？
+		<p>例</p>
 
-(Travis) I could stay home and relax.
+	  <p class="example">I could not sleep last night.</p>
+		<p class="translation">昨夜寝れませんでした。</p>
 
-家でリラックスすることは出来るな。
+		<h2>過去形、完了形</h2>
 
-ここでのcouldは”選択肢”や”可能性”という意味で使われています。
+		<div class="grammar"><p align="center">名詞　＋　could (not) have　＋　動詞過去完了形</p></div>
 
-<hr>
+		<p>例</p>
 
-###否定文
+	  <p class="example">We could have gone to a different restaurant.</p>
+		<p class="translation">私たちは違うレストランに行く事も出来た。</p>
+	  <p class="example">You were so lucky. You could have died.</p>
+		<p class="translation">あなたは本当にラッキーでした。死ぬことになったかもしれませんでした。</p>
 
-	主語　＋　could not　＋　動詞原形
+		<h2>疑問文</h2>
 
-could notはcouldn'tに省略出来ます。
+		<div class="grammar"><p align="center">Could　＋　I/you　＋　動詞原形</p></div>
 
-例
+		<p><span class="inline">could</span>の疑問文は<span class="inline">can</span>とほぼ同じで、お願いする時に使われます。<span class="inline">can</span>は”〜出来ますか”という使い方も出来ますが、<span class="inline">could</span>で”〜を出来ましたか”という使い方は出来ないので注意しましょう。</p>
 
-I could not sleep last night.
+		<p>例</p>
 
-昨夜寝れませんでした。
+	  <p class="example">Could you wait a moment?</p>
+		<p class="translation">少々お待ち頂けますか？</p>
+	  <p class="example">Could you open the window, please?</p>
+		<p class="translation">窓を開けてもらっていいですか？</p>
+	  <p class="example">Could I borrow your pen?</p>
+		<p class="translation">あなたのペンを借りてもいいですか？</p>
 
-<hr>
+  </div>
+</div>
 
-###過去形、完了形
-
-	主語　＋　could (not) have　＋　動詞過去完了形
-
-例
-
-We could have gone to a different restaurant.
-
-私たちは違うレストランに行く事も出来た。
-
-You were so lucky. You could have died.
-
-あなたは本当にラッキーでした。死ぬことになったかもしれませんでした。
-
-<hr>
-
-###疑問文
-
-	　Could　＋　I/you　＋　動詞原形
-
-couldの疑問文はcanとほぼ同じで、お願いする時に使われます。canは”〜出来ますか”という使い方も出来ますが、couldで”〜を出来ましたか”という使い方は出来ないので注意しましょう。
-
-例
-
-Could you wait a moment?
-
-少々お待ち頂けますか？
-
-Could you open the window, please?
-
-窓を開けてもらっていいですか？
-
-Could I borrow your pen?
-
-あなたのペンを借りてもいいですか？
-
-
-{{/markdown}}
-</template>
+{% endblock %}

@@ -1,90 +1,72 @@
-<template name="should">
-{{#markdown}}
+{% extends "base.html" %}
+{% block body %}
 
-#should
-<br>
+<div id="main">
+  <div class="header">
+      <h1>should</h1>
+  </div>
 
-shouldは”〜すべき”という意味と”〜なはず”という意味があります。
+  <div class="content">
 
-###肯定文、否定文
+  	<p><span class="inline">should</span>は”〜すべき”という意味と”〜なはず”という意味があります。</p>
 
-	主語　＋　should (not)　＋　動詞原型
+    <h2>肯定文、否定文</h2>
 
-should notはshouldn'tに省略することが出来ます。
+    <div class="grammar"><p align="center">名詞　＋　should (not)　＋　動詞原型</p></div>
 
-例
+    <p><span class="inline">should not</span>は<span class="inline">shouldn't</span>に省略することが出来ます。</p>
 
-You should talk to your mom.
+    <p>例</p>
+    
+	  <p class="example">You should talk to your mom.</p>
+		<p class="translation">あなたはあなたのお母さんと話すべきです。</p>
+	  <p class="example">You should wake up early.</p>
+		<p class="translation">あなたは早起きするべきです。</p>
+	  <p class="example">He should be here at 9am.</p>
+		<p class="translation">彼は朝９時にここにいるはずです。</p>
+	  <p class="example">We should hang out sometime.</p>
+		<p class="translation">いつか遊ぶべきです。（いつか遊ぼうよ。）</p>
+	  <p class="example">I should not be here.</p>
+		<p class="translation">私はここにいるべきではありません。</p>
 
-あなたはあなたのお母さんと話すべきです。
+		<h2>過去形、完了形</h2>
 
-You should wake up early.
+		<div class="grammar"><p align="center">名詞　＋　should (not) have　＋　動詞過去完了形</p></div>
 
-あなたは早起きするべきです。
+		<p><span class="inline">should have</span>は<span class="inline">should've</span>に省略することが出来ます。</p>
 
-He should be here at 9am.
+		<p>例</p>
 
-彼は朝９時にここにいるはずです。
+	  <p class="example">I should've gone to the party.</p>
+		<p class="translation">私はパーティに行くべきでした。</p>
+	  <p class="example">I shouldn't have watched this movie. It was so boring.</p>
+		<p class="translation">私はこの映画を見るべきではなかったです。とてもつまらなかったです。</p>
+	 
+		<h2>疑問文</h2>
 
-We should hang out sometime.
+		<div class="grammar"><p align="center">should　＋　名詞　＋　動詞原型 ?</p></div>
 
-いつか遊ぶべきです。（いつか遊ぼうよ。）
+		<p>例</p>
 
-I should not be here.
+	  <p class="example">Should I call him?</p>
+		<p class="translation">私は彼に電話するべきですか？</p>
+	  <p class="example">Should I quit my job?</p>
+		<p class="translation">私は仕事を辞めるべきですか？</p>
 
-私はここにいるべきではありません。
+		<h2>他の疑問文の形</h2>
 
-<hr>
+	  <p class="example">What should I do today?</p>
+		<p class="translation">私は今日どうするべきですか？</p>
+	  <p class="example">Who should I talk to?</p>
+		<p class="translation">私は誰と話すべきですか？</p>
 
-###過去形、完了形
+		<h2>ought to</h2>
 
-	主語　＋　should (not) have　＋　動詞過去完了形
+		<p><span class="inline">should</span>の代わりに<span class="inline">ought to</span>を使うことも出来ます。</p>
 
-should haveはshould'veに省略することが出来ます。
+	  <p class="example">You ought to talk to your mom.</p>
 
-例
+  </div>
+</div>
 
-I should've gone to the party.
-
-私はパーティに行くべきでした。
-
-I should not have watched this movie. It was so boring.
-
-私はこの映画を見るべきではなかったです。とてもつまらなかったです。
-
-<hr>
-
-###疑問文
-
-	should　＋　主語　＋　動詞原型 ?
-
-例
-
-Should I call him?
-
-私は彼に電話するべきですか？
-
-Should I quit my job?
-
-私は仕事を辞めるべきですか？
-
-<hr>
-
-###他の疑問文の形
-
-What should I do today?
-
-私は今日どうするべきですか？
-
-Who should I talk to?
-
-私は誰と話すべきですか？
-
-<hr>
-
-###ought to
-
-shouldnの代わりにought toを使うことも出来ます。
-
-{{/markdown}}
-</template>
+{% endblock %}

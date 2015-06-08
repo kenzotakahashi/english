@@ -1,12 +1,47 @@
-<template name="受動態">
-{{#markdown}}
+{% extends "base.html" %}
+{% block body %}
 
-#受動態
+<div id="main">
+  <div class="header">
+      <h1></h1>
+  </div>
+
+  <div class="content">
+
+  	<p></p>
+
+    <h2></h2>
+
+    <div class="grammar"><p align="center"></p></div>
+
+	  <p class="example"></p>
+		<p class="translation"></p>
+	  <p class="example"></p>
+		<p class="translation"></p>
+	  <p class="example"></p>
+		<p class="translation"></p>
+	  <p class="example"></p>
+		<p class="translation"></p>
+
+		<p class="vocabulary"></p>
+		<p class="vocabulary"></p>
+		<p class="vocabulary"></p>
+		<p class="vocabulary"></p>
+		<p class="vocabulary"></p>
+
+		<span class="inline">
+
+  </div>
+</div>
+
+{% endblock %}
+
+受動態
 <br>
 
 受動態は”〜された”という意味です。全ての自制で受動態を使うことが出来ます。
 
-####現在形
+現在形
 
 	主語　＋　is/am/are　＋　(not)　＋　動詞過去完了形
 
@@ -28,7 +63,7 @@ My English class is taught by Fred.
 
 <hr>
 
-####過去形
+過去形
 
 	主語　＋　was/were　＋　(not)　＋　動詞過去完了形
 
@@ -40,7 +75,7 @@ I was invited to the party.
 
 <hr>
 
-####助動詞
+助動詞
 
 	主語　＋　助動詞　＋　(not)　＋　be　＋　動詞過去完了形
 
@@ -52,7 +87,7 @@ He should be taken to the hospital.
 
 <hr>
 
-####完了形
+完了形
 
 	主語　＋　have/has/had　＋　(not)　＋　been　＋　動詞過去完了形
 
@@ -64,7 +99,7 @@ I have been asked a lot of questions about business lately.
 
 <hr>
 
-####進行形
+進行形
 
 	主語　＋　am/is/are/was/were　＋　(not)　＋　being　＋　動詞過去完了形
 
@@ -73,7 +108,3 @@ I have been asked a lot of questions about business lately.
 The classroom is being used at the moment.
 
 教室は現在使われています。
-
-
-{{/markdown}}
-</template>

@@ -1,75 +1,61 @@
-<template name="If_I_do">
-{{#markdown}}
+{% extends "base.html" %}
+{% block body %}
 
-#If I do
-<br>
+<div id="main">
+  <div class="header">
+      <h1>If I do</h1>
+  </div>
 
-Ifは”もし”という意味です。whenと同じで必然的に２つの節が必要です。
+  <div class="content">
 
-	If　＋　ifパート　＋　,　＋　メインパート
-	メインパート　＋　if　＋　ifパート 
+  	<p><span class="inline">If</span>は”もし”という意味です。<span class="inline">when</span>と同じで必然的に２つの節が必要です。</p>
 
-どの自制を使うかで当然意味は変わってきますが、本来の自制の意味と若干違うので注意が必要です。
-<br>
-<hr>
-####ifパート - 現在形、 メインパート - 未来形/命令形
+    <div class="grammar"><p align="center">If　＋　節(ifパート)　＋　,　＋　節(メインパート)<br>
+    																			 節(メインパート)　＋　if　＋　節(ifパート) </p></div>
 
-これが基本的な形になります。
+    <p>どの自制を使うかで当然意味は変わってきますが、本来の自制の意味と若干違うので注意が必要です。</p>
 
-例
+    <h2>ifパート - 現在形、 メインパート - 未来形/命令形</h2>
 
-If I get an email from Fred, I will let you know.
+    <p>これが基本的な形になります。</p>
 
-I will let you know if I get an email from Fred.
+    <p>例</p>
 
-もしフレッドからメールが来たら知らせるよ。
+	  <p class="example">If I get an email from Fred, I will let you know.<br>
+	  I will let you know if I get an email from Fred.</p>
+		<p class="translation">もしフレッドからメールが来たら知らせるよ。</p>
+		<p><span class="inline">When</span>を<span class="inline">if</span>に変えた以外は<span class="inline">when</span>の時に紹介した文と全く同じです。この文は、フレッドからメールが来るかどうか分からないということを暗示しています。</p>
 
-Whenをifに変えた以外はwhenの時に紹介した文と全く同じです。この文は、フレッドからメールが来るかどうか分からないということを暗示しています。
+	  <p class="example">If you want to start a business, don't wait.</p>
+		<p class="translation">もし起業したいなら、待つな。</p>
 
-<hr>
+		<h2>ifパート - 過去形、メインパート - would</h2>
 
-If you want to start a business, don't wait.
+		<p>ifパートが過去形になると、”もし仮に起こったら”という意味になります。メインパートには<span class="inline">would</span>を使います。過去形を使っているからといって過去の事を話しているわけではありません。</p>
 
-もし起業したいなら、待つな。
+		<p>例</p>
 
-<hr>
+	  <p class="example">I don't have money. If I had money, I would buy a house.</p>
+		<p class="translation">私はお金が無い。もしお金があったら私は家を買うだろう。</p>
+	  <p class="example">I am not American. If I were American, I would not have to learn English.</p>
+		<p class="translation">私はアメリカ人ではない。もし私がアメリカ人なら英語を学ばなくていいだろう。 </p>
+		<p>Ifを使う時はbe動詞にwereを使うことが出来ます。普段通りwasを使うことも出来ます。</p>
 
-####ifパート - 過去形、メインパート - would
+		<h2>ifパート - 過去完了形、メインパート - would (not) have　＋　動詞過去完了形 </h2>
 
-ifパートが過去形になると、”もし仮に起こったら”という意味になります。メインパートにはwouldを使います。注意しなければならないのは、過去形を使っているからといって過去の事を話しているわけではありません。
+		<span class="inline">would have</span>は<span class="inline">would've</span>に省略出来ます。
 
+		<p>これは過去の事を表現する時に使われます。</p>
 
-例
+		<p>例</p>
 
-I don't have money. If I had money, I would buy a house.
+	  <p class="example">I did not have money. If I had had money, I would have bought a house.</p>
+		<p class="translation">私はお金がなかった。もしお金があったら私は家を買っただろう。</p>
+		<p>これは先ほどの例と違い、過去の事を話しています。</p>
+	  <p class="example">I was not busy. If I'd been busy, I wouldn't have been able to help you.</p>
+		<p class="translation">私は忙しくなかった。もし忙しかったら、あなたの事を手伝う事が出来なかった。</p>
 
-私はお金が無い。もしお金があったら私は家を買うだろう。
+  </div>
+</div>
 
-If I were American, I would not have to learn English.
-
-I am not American. もし私がアメリカ人なら英語を学ばなくていいだろう。 
-
-Ifを使う時はbe動詞にwereを使うことが出来ます。普段通りwasを使うことも出来ます。
-
-<hr>
-
-####ifパート - 過去完了形、メインパート - would (not) have　＋　動詞過去完了形 
-
-これは過去の事を表現する時に使われます。
-
-例
-
-I did not have money. If I had had money, I would have bought a house.
-
-私はお金がなかった。もしお金があったら私は家を買っただろう。
-
-これは先ほどの例と違い、過去の事を話しています。
-
-I was not busy. If I had been busy, I would not have been able to help you.
-
-私は忙しくなかった。もし忙しかったら、あなたの事を手伝う事が出来なかった。
-
-
-
-{{/markdown}}
-</template>
+{% endblock %}
