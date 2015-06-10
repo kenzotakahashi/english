@@ -1,63 +1,48 @@
-<template name="some,any">
-{{#markdown}}
+{% extends "base.html" %}
+{% block body %}
 
-#some, any
+<div id="main">
+  <div class="header">
+      <h1>some, any</h1>
+  </div>
 
+  <div class="content">
 
-基本的に、some(又はsomeone/somebody/something/somewhere)は肯定文で、any(又はanyone/anybody/anything/anywhere)は否定文で使われます。
+  	<p><span class="inline">some</span>と<span class="inline">any</span>は代名詞です。<span class="inline">some</span>と<span class="inline">any</span>は<span class="inline">a</span>や<span class="inline">the</span>のように他の名詞に付きますが、<span class="inline">someone</span>のように他の単語とくっ付いて一つの単語になっているものもあります。</p>
 
+  	<p>例</p>
 
-例
+	  <p class="example">Let me know if you have any questions.</p>
+		<p class="translation">何か質問があれば教えて下さい。</p>
+	  <p class="example">Anyone can cook.</p>
+		<p class="translation">誰でも料理出来ます。</p>
+	  <p class="example">Ask me anything.</p>
+		<p class="translation">何でも聞いて。</p>
+	  <p class="example">Somebody has to be a leader.</p>
+		<p class="translation">誰かがリーダーにならなければならない。</p>
+	  <p class="example">Let's go somewhere.</p>
+		<p class="translation">どこかへ行こう。</p>
+		<p>somebody/someone/something/anybody/anyone/anythingは単数ですが、they/them/theirを使うことが出来ます。</p>
+	  <p class="example">Someone dropped their phone. (= Someone dropped his or her phone.)</p>
+		<p class="translation">誰かが携帯を落とした。</p>
 
-I need some advice.
+		<h2>someとanyの使い分け</h2>
 
-私は何かアドバイスが必要です。
+		<p>肯定文でsome、否定文でanyを使う場合はよくあります。</p>
 
-I don't need any advice.
+	  <p class="example">I need some advice.</p>
+		<p class="translation">私は何かアドバイスが必要です。</p>
+	  <p class="example">I don't need any advice.</p>
+		<p class="translation">私は何のアドバイスも要りません。</p>
 
-私は何のアドバイスも要りません。
+		<hr>
 
-<hr>
+	  <p class="example">I have something to do.</p>
+		<p class="translation">私はやることがあります。</p>
+	  <p class="example">I don't have anything to do.</p>
+		<p class="translation">私はやることが何もありません。</p>
 
-I have something to do.
+  </div>
+</div>
 
-私はやることがあります。
-
-I don't have anything to do.
-
-私はやることが何もありません。
-
-<hr>
-
-
-Let me know if you have any questions.
-
-何か質問があれば教えて下さい。
-
-Anyone can cook.
-
-誰でも料理出来ます。
-
-<hr>
-
-somebody/someone/something/anybody/anyone/anythingは単数ですが、所有格にtheirを使うことが出来ます。
-
-Someone dropped their phone. (= Someone dropped his or her phone.)
-
-誰かが携帯を落とした。
-
-Somebody has to be a leader.
-
-誰かがリーダーにならなければならない。
-
-
-
-
-
-
-
-
-
-
-{{/markdown}}
-</template>
+{% endblock %}

@@ -59,6 +59,7 @@ def inject_user():
 			("could", "could"),
 			("受動態(is done)", "受動態"),
 			("There (is)", "there_is"),
+			("some, any","some,any"),
 		]
     }
 
