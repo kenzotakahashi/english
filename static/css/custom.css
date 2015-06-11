@@ -39,3 +39,16 @@ a {
 a:visited {
     color: #265778; /* block-normal-text-normal */
 }
+
+a:active { 
+    background-color: yellow;
+}
+
+hr {
+	color: #3b8bba;
+}
+
+footer {
+	background-color: #efeef0;
+	padding: 10px;
+}
