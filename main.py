@@ -11,11 +11,6 @@ app.debug = True
 def index():
 	return render_template('index.html')
 
-
-# @app.route('/user/<name>')
-# def user(name):
-# 	return render_template('user.html', name=name)
-
 @app.route('/post/<name>')
 def post(name):
 	return render_template('posts/' + name + '.html')
@@ -62,9 +57,9 @@ def inject_user():
 			("some, any","some,any"),
 			("no, none","no,none"),
 			("数や量を表す代名詞","数や量を表す代名詞"),
-			# ("",""),
-			# ("",""),
-			# ("",""),
+			# ("all,every,whole,each",""),
+			# ("another,other",""),
+			("both, neither, either","both,neither,either"),
 			# ("",""),
 			# ("",""),
 			# ("",""),
