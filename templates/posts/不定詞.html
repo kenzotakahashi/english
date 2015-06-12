@@ -1,55 +1,40 @@
-<template name="">
-{{#markdown}}
+{% extends "base.html" %}
+{% block body %}
 
-#動詞　＋　不定詞
-<br>
+<div id="main">
+  <div class="header">
+      <h1>不定詞</h1>
+  </div>
 
-to + 動詞原形の形を不定詞と呼びます。色んな使われ方がありますが、今回は動詞　＋　不定詞の形を紹介します。
+  <div class="content">
 
+  	<p><span class="inline">to + 動詞原形</span>の形を不定詞と呼びます。色んな使われ方がありますが、今回は<span class="inline">動詞　＋　不定詞</span>の形を紹介します。</p>
 
-例
+  	<p>例</p>
 
-I want to sell my cloths.
+	  <p class="example">I want to sell my cloths.</p>
+		<p class="translation">私は服を売りたいです。</p>
+	  <p class="example">I have to go.</p>
+		<p class="translation">行かなきゃいけないです。</p>
+	  <p class="example">You need to go to a doctor.</p>
+		<p class="translation">お医者さんに行く必要があります。</p>
+	  <p class="example">She likes to watch the moon.</p>
+		<p class="translation">彼女は月を見るのが好きです。</p>
+	  <p class="example">I tried to help him.</p>
+		<p class="translation">私は彼を助けようとしました。</p>
+	  <p class="example">I decided to go to law school.</p>
+		<p class="translation">私は法学の大学院に行くことに決めました。</p>
 
-私は服を売りたいです。
-
-I have to go.
-
-行かなきゃいけないです。
-
-You need to go to a doctor.
-
-お医者さんに行く必要があります。
-
-She likes to watch the moon.
-
-彼女は月を見るのが好きです。
-
-I tried to help him.
-
-私は彼を助けようとしました。
-
-I decided to go to law school.
-
-私は法学の大学院に行くことに決めました。
-
-<hr>
-
-toの後の動詞を否定したい場合はtoの前にnotを入れます。普通の否定文とは意味が異なるので注意しましょう。
+		<p><span class="inline">to</span>の後の動詞を否定したい場合は<span class="inline">to</span>の前に<span class="inline">not</span>を入れます。普通の否定文とは意味が異なるので注意しましょう。</p>
+	  <p class="example">I tried not to laugh.</p>
+		<p class="translation">私は笑いをこらえました。（笑わないように努めた）</p>
+		<p><span class="inline">I did not try to laugh.</span>とは意味が違います。</p>
+		<hr>
+	  <p class="example">I decided not to go to law school.</p>
+		<p class="translation">私は法学の大学院に行かないことに決めました。</p>
 
 
-I tried not to laugh.
+  </div>
+</div>
 
-私は笑いをこらえました。（笑わないように努めた）
-
-*I did not try to laugh* とは意味が違います。
-
-<hr>
-
-I decided not to go to law school.
-
-私は法学の大学院に行かないことに決めました。
-
-
-{{/markdown}}
-</template>
+{% endblock %}
