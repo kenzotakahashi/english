@@ -60,9 +60,15 @@ def inject_user():
 			# ("all,every,whole,each",""),
 			# ("another,other",""),
 			("both, neither, either","both,neither,either"),
+			("名詞節","名詞節"),
+			("ingとedで終わる形容詞","ingとedで終わる形容詞"),
 			# ("",""),
 			# ("",""),
 			# ("",""),
+			# ("",""),
+			# ("",""),
+			# ("",""),
+			# ("",""),						
 		]
     }
 
