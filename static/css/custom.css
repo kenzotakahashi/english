@@ -16,13 +16,13 @@ h2 {
 }
 
 .example {
-	margin-left: 40px;
-	margin-bottom: 0px;
+	text-indent: 2em;
+	margin-bottom: 0;
 }
 
 .translation {
-	margin-left: 40px;
-	margin-top: 0px;
+	text-indent: 2em;
+	margin-top: 0;
 }
 
 .grammar {
