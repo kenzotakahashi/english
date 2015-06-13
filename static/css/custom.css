@@ -15,14 +15,31 @@ h2 {
 	font-size: 1.3em;
 }
 
+.set {
+	margin-left: 2em;
+}
+
 .example {
-	text-indent: 2em;
 	margin-bottom: 0;
 }
 
 .translation {
-	text-indent: 2em;
 	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.explanation {
+	margin-top: 0;
+	/*background-color: #f1f9f7;*/
+/*	border-color: #e0f1e9;
+	border-style: solid;
+	border-width: 1px;*/
+	/*color: #1d9d74;*/
+}
+
+.fa-info-circle {
+	color: #1d9d74;
+	padding-right: .5em;
 }
 
 .grammar {
@@ -34,14 +51,23 @@ h2 {
 }
 
 .vocabulary {
-	margin: 0 0 0 40px;
+	margin: 0 0 0 2em;
 }
 
 .inline {
-	background-color: #efeef0;
+	background-color: #f1f9f7;
+	border-color: #e0f1e9;
+	color: #1d9d74;
 	padding: 3px;
 }
 
+table.indented-table {
+	margin-left: 2em;
+}
+
+td.arrow {
+	padding: 0 1em 0 1em;
+}
 
 a {
     color: #3b8bba; /* block-background-text-normal */
@@ -50,6 +76,10 @@ a {
 
 a:visited {
     color: #265778; /* block-normal-text-normal */
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 hr {
