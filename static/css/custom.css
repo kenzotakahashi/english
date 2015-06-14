@@ -1,9 +1,9 @@
 body {
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: Helvetica, Verdana, sans-serif;
 }
 
 h1, h2, .pure-menu {
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: Helvetica, Verdana, sans-serif;
 }
 
 h1, h2 {
@@ -29,7 +29,7 @@ h2 {
 }
 
 .explanation {
-	margin-top: 0;
+	margin-top: .3em;
 	/*background-color: #f1f9f7;*/
 /*	border-color: #e0f1e9;
 	border-style: solid;

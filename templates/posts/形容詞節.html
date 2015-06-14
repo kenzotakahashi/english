@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block body %}
+
+<div id="main">
+  <div class="header">
+      <h1>形容詞節（関係代名詞）</h1>
+  </div>
+
+  <div class="content">
+
+  	<p>このユニットでは形容詞節という非常に重要なコンセプトを紹介します。関係代名詞と呼ばれることもありますが、形容詞節の方がしっくり来るのでこのサイトでは形容詞節と呼びます。</p>
+
+  	<p><a href="{{ url_for('post', name='形容詞', _external=True)}}">形容詞のユニット</a>で名詞の修飾の仕方を勉強しました。</p>
+
+    <div class="set">
+		  <p class="example">I have a big brother. He is kind.</p>
+			<p class="translation">私には兄が一人います。彼は優しいです。</p>
+		</div>
+
+		<p>形容詞を使えばこれを一文で表現することが出来ますよね。</p>
+
+    <div class="set">
+		  <p class="example">I have a kind big brother.</p>
+			<p class="translation">私には優しい兄が一人います。</p>
+		</div>
+
+		<p>しかし形容詞はあくまで単語なので、表現に限りがあります。次の文はどうでしょう。</p>
+
+    <div class="set">
+		  <p class="example">I have a big brother. He is an architect.</p>
+			<p class="translation">私には兄が一人います。彼は建築家です。</p>
+		</div>
+
+		<p>この文も先ほどの文と同じで<span class="inline">brother</span>を説明していますが、今まで習った形容詞ではこれを一文に出来ません。ですが形容詞節を使うことによって、これを一文で表現することが出来ます。</p>
+
+    <div class="set">
+		  <p class="example">I have a big brother <strong>who is an architect</strong>.</p>
+			<p class="translation">私には建築家の兄が一人います。</p>
+		</div>
+
+		<p><span class="inline">who is an architect</span>という節が形容詞としての役割を果たしています。<span class="inline">who</span>が<span class="inline">he</span>の代わりになっていると考えれば分かりやすいかもしれません。日本語では色々修飾して最後に名詞を言うのに対し、英語は簡単な形容詞以外は、先に名詞を言ってから後でそれを修飾します。</p>
+
+		<h2>who/which/that</h2>
+
+		<p>先ほどの例では<span class="inline">who</span>というのがキーワードになっていましたが、実は他に２つキーワードがあります。</p>
+
+    <table class="pure-table pure-table-bordered">
+      <tbody>
+      <tr>
+        <td>who</td>
+        <td>人</td>
+      </tr>
+      <tr>
+        <td>which</td>
+        <td>もの</td>
+      </tr>
+      <tr>
+        <td>that</td>
+        <td>人、もの</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <p>人には<span class="inline">who</span>,ものには<span class="inline">that</span>がよく使われます。</p>
+
+    <p>例</p>
+
+    <div class="set">
+		  <p class="example">I need someone <strong>who/that speaks Chinese</strong>.</p>
+			<p class="translation">中国語を話す人が必要です。</p>
+		</div>
+    <div class="set">
+		  <p class="example">Julie works for a company <strong>that/which makes mobile games</strong>.</p>
+			<p class="translation">Julieはモバイルゲームを作っている会社で働いています。</p>
+		</div>
+
+		<h2>補語に使用</h2>
+
+    <div class="set">
+		  <p class="example">I'm the one <strong>that needs to go after her</strong>.</p>
+			<p class="translation">彼女を探しに行かなきゃいけないのは私です。 - <a href="https://en.wikipedia.org/wiki/Anna_(Disney)" target="_blank">Anna</a>, <a href="https://en.wikipedia.org/wiki/Frozen_(2013_film)" target="_blank">Frozen</a></p>
+			<p class="explanation"><i class="fa fa-info-circle"></i><span class="inline">one</span>は代名詞です。<span class="inline">the one　＋　形容詞節</span>はよく出てくるパターンで、主語を強調します。この場合、<span class="inline">I need to go after her.</span>と大まかな意味は同じですが、「私が行かなければいけない」というのを強調するために形容詞節を使っています。</p>
+		</div>
+		
+
+		<h2>主語に使用</h2>
+
+		<p>形容詞節を主語に使うことも出来ます。この場合メインの主語と動詞が形容詞節によって切り離されるので慣れるまで時間がかかるかもしれません。</p>
+
+    <div class="set">
+		  <p class="example">A business <strong>that lasts more than 5 years</strong> is rare.</p>
+			<p class="translation">５年以上続くビジネスは珍しい。</p>
+		</div>
+
+		<p>形容詞節を含む文を読む時は、メインの主語と動詞が何かというのを確認するために、頭の中で文を簡略化してみるといいでしょう。この文には動詞が２つ（<span class="inline">lasts</span>と<span class="inline">is</span>）ありますが、あくまで文の動詞は<span class="inline">is</span>です。なので簡略化するとこうなります。</p>
+
+    <div class="set">
+		  <p class="example">A business is rare.</p>
+			<p class="translation">ビジネスは珍しい。</p>
+		</div>
+
+		<p>どんな長い文でもメインの主語と動詞は一つずつしかありません。</p>
+
+		<p>長い文は沢山ありますが、<span class="inline">and</span>,<span class="inline">but</span>,<span class="inline">because</span>,<span class="inline">when</span>,<span class="inline">if</span>などの接続詞で繋げられた文は比較的読みやすいのに対し、形容詞節を含む文（特に主語に使われる場合）は２つの節を同時に頭に入れなければならないので理解するのにエネルギーを必要とします。その為、形容詞節は口語より文語でよく使われる傾向にあります。</p>
+		
+
+  </div>
+</div>
+
+{% endblock %}
