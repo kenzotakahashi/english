@@ -15,10 +15,6 @@ def index():
 def post(name):
 	return render_template('posts/' + name + '.html')
 
-@app.route('/ec')
-def index():
-	return render_template('posts/others/ec.html')
-
 @app.context_processor
 def inject_user():
     return {
