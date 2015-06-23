@@ -1,0 +1,81 @@
+{% extends "englishCorner/ecBase.html" %}
+{% block body %}
+
+
+	<div id="main">
+	  <div class="header">
+	      <h1>Session1(June 23)</h1>
+	  </div>
+
+	  <div class="content">
+
+	  <h2>Homework (due: Thursday, June 25, at 3:30 PM)</h2>
+
+	  <p>Read from <a href="{{ url_for('post', name='名詞', _external=True)}}" target="_blank">名詞</a> to <a href="{{ url_for('post', name='現在形を使った未来形', _external=True)}}" target="_blank">現在形を使った未来形</a> on <a href="{{ url_for('index') }}" target="_blank">Kenzoの英語コース</a>（25 units）</p>
+
+	  <p>Answer the following questions and email it to <strong>kenzotakahashi2@gmail.com</strong> from <strong>your Washburn email</strong></p>
+
+	  <ol>
+	  	<li>How long did it take you to read?</li>
+	  	<li>What were the 3 most useful units?</li>
+	  	<li>Was there anything confusing? If so, which part(s)?(You can write in Japanese if you want)</li>
+	  </ol>
+
+	  <p>Here is a sample email:</p>
+
+
+  	<div class="sampleEmail">
+		  <p><strong>Title:</strong><br> Homework1, Kotaro Kusunoki</p>
+
+		  <p><strong>Body:</strong><br>Kenzo,</p>
+
+		  <p>Here is homework1.</p>
+
+		  <ol>
+		  	<li>Approximately 3 hours.</li>
+		  	<li>動詞、不定詞、現在完了形２</li>
+		  	<li>前置詞のところが分かり辛かったです。フレーズの定義が理解出来ませんでした。<br>過去形と過去完了形ってどうやって使い分けるんですか？</li>
+		  </ol>
+
+		  <p>Thanks,<br>Kotaro</p>
+	  </div>
+
+	  <h2>Next session</h2>
+
+	  <p>Date: Thursday, June 25, at 3:30 PM</p>
+	  <p>Bring your <strong>laptop</strong> and <strong>earphones</strong>.</p>
+
+	  <h2>Activity for today</h2>
+
+	  <p>Find the following information using <a href="http://www.washburn.edu" target="_blank">Washburn Website</a>. You must do it with your partner.</p>
+
+	  <ol class="questions">
+			<li>Where is prof. Zach Frank’s office?</li>
+			<!-- <p>Meet our Faculty and Staff → Search</p> -->
+
+			<li>What time does the Student Recreation and Wellness Center(SRWC) open tomorrow?</li>
+			<!-- <p>Campus life → Recreation and Wellness → General Information → Hours of Operation</p> -->
+
+			<li>How much is the meal plan?</li>
+			<!-- <p>Campus life → Housing and Dining → Dining on Campus → Meal Plan</p> -->
+
+			<li>What time does the library close tomorrow?</li>
+			<!-- <p>Libraries → Mabee Library Hours</p> -->
+
+			<li>What time does the Ichabod Shop(Bookstore) close today?</li>
+			<!-- <p>Campus life → Memorial Union → Hours</p> -->
+
+			<li>How much is the tuition per credit hour for a Non-Kansas resident?</li>
+			<!-- <p>Current Students → Tuition & Fees</p> -->
+
+			<li>What are the requirements for business major with emphasis in marketing?</li>
+			<!-- <p>Academics → Adademic Programs A to Z → Business → Marketing</p> -->
+
+			<li>When is the last day to enroll in a course without instructor’s permission?</li>
+			<!-- <p>Academics → Academic Calender → Fall 2015</p> -->
+	  </ol>
+
+	  </div>
+	</div>
+
+{% endblock %}

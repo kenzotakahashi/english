@@ -7,6 +7,16 @@ app.debug = True
 
 # manager = Manager(app)
 
+@app.route('/ec')
+def ec():
+	return render_template('englishCorner/ec.html')
+
+@app.route('/ec/<name>')
+def ecSession(name):
+	return render_template('englishCorner/ec' + name + '.html')
+
+
+
 @app.route('/')
 def index():
 	return render_template('index.html')
@@ -26,8 +36,8 @@ def inject_user():
 			("動詞２", "動詞２"), 
 			("副詞", "副詞"),
 			("前置詞", "前置詞"),
-			("現在進行形(I am doing)", "現在進行形"),
 			("現在形(I do)", "現在形"),
+			("現在進行形(I am doing)", "現在進行形"),
 			("be動詞(I am~, I was~)", "be動詞"),
 			("過去形(I did)", "過去形"),
 			("過去進行形(I was doing)", "過去進行形"),
@@ -68,11 +78,11 @@ def inject_user():
 			("形容詞節２","形容詞節２"),
 			("形容詞節３","形容詞節３"),
 			("形容詞節４","形容詞節４"),
+			("動詞の形容詞的活用","動詞の形容詞的活用"),
 			("比較級","比較級"),
 			("比較級２","比較級２"),
 			("最上級","最上級"),
 			("動名詞","動名詞"),
-			# ("",""),
 			# ("",""),					
 		]
     }

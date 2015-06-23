@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>English Corner</title>
+
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+
+  <!--[if lte IE 8]>
+      <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="{{ url_for('static', filename = 'css/layouts/side-menu.css') }}">
+  <!--<![endif]-->
+</head>
+<body>
+
+  {% block body %}
+  {% endblock %}
+
+  
+
+</body>
+
+</html>

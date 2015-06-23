@@ -90,3 +90,30 @@ footer {
 	background-color: #efeef0;
 	padding: 10px;
 }
+
+
+/* English Corner */
+
+.sampleEmail {
+/*	border-style: solid;
+	border-width: .2em;
+	border-color: #efeef0;*/
+	padding: 1em;
+	background-color: #efeef0;
+}
+
+
+.questions > li {
+	line-height: 2em;
+}
+
+.questions > p {
+	color: #1d9d74;
+}
+
+
+
+
+
+
+
