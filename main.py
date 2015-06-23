@@ -55,7 +55,7 @@ def inject_user():
 			("will", "will"),
 			("現在形を使った未来形", "現在形を使った未来形"),
 			("can", "can"),
-			("When I do", "when_I_do"),
+			("When I do", "When_I_do"),
 			("must", "must"),
 			("mustとhave toの違い","must,have_to"),
 			("might", "might"),
