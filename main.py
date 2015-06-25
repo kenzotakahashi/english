@@ -16,7 +16,6 @@ def ecSession(name):
 	return render_template('englishCorner/ec' + name + '.html')
 
 
-
 @app.route('/')
 def index():
 	return render_template('index.html')
@@ -31,9 +30,9 @@ def inject_user():
 		"posts": [
 			("名詞", "名詞"),
 			("動詞", "動詞"), 
-			("名詞２", "名詞２"),
+			("名詞２ - 冠詞", "名詞２"),
 			("形容詞", "形容詞"),
-			("動詞２", "動詞２"), 
+			("動詞２ - 状態を表す動詞", "動詞２"), 
 			("副詞", "副詞"),
 			("前置詞", "前置詞"),
 			("現在形(I do)", "現在形"),
@@ -53,18 +52,18 @@ def inject_user():
 			("used to (do)", "used_to"),
 			("(I'm) going to (do)", "going_to"),
 			("will", "will"),
-			("現在形を使った未来形", "現在形を使った未来形"),
+			("現在形を使った未来形(I am doing/I do)", "現在形を使った未来形"),
 			("can", "can"),
-			("When I do", "When_I_do"),
+			("When (I do)", "When_I_do"),
 			("must", "must"),
 			("mustとhave toの違い","must,have_to"),
 			("might", "might"),
 			("may", "may"),
 			("should", "should"),
 			("would", "would"),
-			("If I do", "If_I_do"),
+			("If (I do)", "If_I_do"),
 			("could", "could"),
-			("受動態(is done)", "受動態"),
+			("受動態 (is done)", "受動態"),
 			("There (is)", "there_is"),
 			("some, any","some,any"),
 			("no, none", "no,none"),
@@ -83,6 +82,9 @@ def inject_user():
 			("比較級２","比較級２"),
 			("最上級","最上級"),
 			("動名詞","動名詞"),
+			# ("",""),					
+			# ("",""),					
+			# ("",""),					
 			# ("",""),					
 		]
     }
