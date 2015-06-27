@@ -95,6 +95,12 @@ footer {
 	padding: 10px;
 }
 
+iframe {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 
 /* ============== English Corner =================== */
 
