@@ -31,12 +31,15 @@
       <a class="pure-menu-heading" href="/">Kenzoの英語コース</a>
 
       <ul class="pure-menu-list">
-    		{% for post in posts %}
-          <li class="pure-menu-item">
-          	<a href="{{ url_for('post', name=post[1], _external=True)}}"
-          	   class="pure-menu-link">{{post[0]}}</a>
-          </li>
-    		{% endfor %}
+        <li class="menu-item">
+          <a href="/">Home</a>
+        </li>
+        <li class="menu-item">
+          <a href="{{ url_for('pronunciation', _external=True)}}">発音</a>
+        </li>
+        <li class="menu-item">
+          <a href="{{ url_for('grammar', _external=True)}}">文法</a>
+        </li>
       </ul>
     </div>
   </div>
