@@ -15,6 +15,12 @@ h2 {
 	font-size: 1.3em;
 }
 
+/*.top {
+	background: url(../images/thumnail.jpg);
+	background-size: cover;
+	height: 500px;
+}*/
+
 .units {
 	padding: .4em;
 }
