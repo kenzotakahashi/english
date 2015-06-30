@@ -90,9 +90,9 @@ def grammar():
 @app.route('/pronunciation')
 def pronunciation():
 	posts = [
-		("発音 - イントロダクション","イントロダクション"),					
-		# ("",""),					
-		# ("",""),					
+		("発音 - イントロダクション","イントロダクション"),
+		("/i/","i"),
+		("/ɪ/","ɪ"),
 		# ("",""),			
 	]
 	return render_template('pronunciation.html', posts=posts)
