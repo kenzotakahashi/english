@@ -91,8 +91,13 @@ def grammar():
 def pronunciation():
 	posts = [
 		("発音 - イントロダクション","イントロダクション"),
-		("/i/","i"),
-		("/ɪ/","ɪ"),
+		("[i]","i"),
+		("[ɪ]","ɪ"),
+		("[eɪ]","eɪ"),			
+		("[ɛ]","ɛ"),			
+		("[æ]","æ"),			
+		# ("",""),			
+		# ("",""),			
 		# ("",""),			
 	]
 	return render_template('pronunciation.html', posts=posts)
