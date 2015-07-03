@@ -101,10 +101,14 @@ def pronunciation():
 		("[u]","u"),
 		("[ʊ]","ʊ"),
 		("[oʊ]","oʊ"),
+		("[ə]","ə"),
+		("[aɪ]","aɪ"),
+		("[aʊ]","aʊ"),
+		("[ɔɪ]","ɔɪ"),	
+		("[ər]","ər"),
 		# ("",""),
 		# ("",""),
 		# ("",""),
-		# ("",""),	
 	]
 	return render_template('pronunciation.html', posts=posts)
 
