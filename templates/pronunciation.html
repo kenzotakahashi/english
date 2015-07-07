@@ -9,12 +9,24 @@
   <div class="content">
 		{% for post in posts %}
 	    <div class="units">
-	    	<a href="{{ url_for('pronunciationPost', name=post[1], _external=True)}}">{{post[0]}}</a>
+        <a href="{{ url_for('pronunciationPost', name=post[1], _external=True)}}">{{post[0]}}</a>
 	    </div>
 		{% endfor %}
+    <h3>母音</h3>
+    {% for post in vowels %}
+    <div class="units">
+      <a href="{{ url_for('vowels', name=post[1], _external=True)}}">{{post[0]}}</a>
+    </div>
+    {% endfor %}
+    <h3>子音</h3>
+    <p>Coming soon!</p>
+    {% for post in consonants %}
+    <div class="units">
+      <a href="{{ url_for('consonants', name=post[1], _external=True)}}">{{post[0]}}</a>
+    </div>
+    {% endfor %}
   </div>
 
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </div>
 
 {% endblock %}

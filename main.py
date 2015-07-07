@@ -91,6 +91,12 @@ def grammar():
 def pronunciation():
 	posts = [
 		("発音 - イントロダクション","イントロダクション"),
+		# ("",""),
+		# ("",""),
+		# ("",""),
+	]
+
+	vowels = [
 		("[i]","i"),
 		("[ɪ]","ɪ"),
 		("[eɪ]","eɪ"),
@@ -106,11 +112,9 @@ def pronunciation():
 		("[aʊ]","aʊ"),
 		("[ɔɪ]","ɔɪ"),	
 		("[ər]","ər"),
-		# ("",""),
-		# ("",""),
-		# ("",""),
 	]
-	return render_template('pronunciation.html', posts=posts)
+
+	return render_template('pronunciation.html', posts=posts, vowels=vowels)
 
 
 @app.route('/post/<name>')
@@ -120,6 +124,15 @@ def post(name):
 @app.route('/pronunciation/<name>')
 def pronunciationPost(name):
 	return render_template('posts/発音/' + name + '.html')
+
+@app.route('/pronunciation/vowels/<name>')
+def vowels(name):
+	return render_template('posts/発音/vowels/' + name + '.html')
+
+@app.route('/pronunciation/consonants/<name>')
+def consonants(name):
+	return render_template('posts/発音/consonants/' + name + '.html')
+
 
 
 # @app.context_processor
