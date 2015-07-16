@@ -114,7 +114,34 @@ def pronunciation():
 		("[ər]","ər"),
 	]
 
-	return render_template('pronunciation.html', posts=posts, vowels=vowels)
+	consonants = [
+		("[m]の発音","m"),
+		("[n]の発音","n"),
+		("[ŋ]の発音","ŋ"),
+		("[l]の発音","l"),
+		("[r]の発音","r"),
+		("[w]の発音","w"),	
+		("[j]の発音","j"),
+		("[h]の発音","h"),
+		("[p]の発音","p"),
+		("[b]の発音","b"),
+		("[k]の発音","k"),
+		("[g]の発音","g"),
+		("[f]の発音","f"),
+		("[v]の発音","v"),
+		("[s]の発音","s"),
+		("[z]の発音","z"),
+		("[θ]の発音","θ"),
+		("[ð]の発音","ð"),	
+		("[ʃ]の発音","ʃ"),
+		("[ʒ]の発音","ʒ"),
+		("[tʃ]の発音","tʃ"),
+		("[dʒ]の発音","dʒ"),
+		("[t]の発音","t"),
+		("[d]の発音","d"),
+	]
+
+	return render_template('pronunciation.html', posts=posts, vowels=vowels, consonants=consonants)
 
 
 @app.route('/post/<name>')
