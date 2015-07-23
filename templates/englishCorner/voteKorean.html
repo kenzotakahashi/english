@@ -1,0 +1,31 @@
+{% extends "englishCorner/ecBase.html" %}
+{% block body %}
+
+
+<div id="main">
+  <div class="header">
+      <h1>Session2(June 25)</h1>
+  </div>
+
+  <div class="content">
+
+    <form action="{{ url_for('voteKorean') }}" method=post class="add-entry pure-form">
+
+	    {% for i in korean %}
+
+		    <label for="{{i}}" class="pure-checkbox">
+			    <input type="checkbox" id="{{i}}" name="{{i}}" >
+		        {{i}}
+		    </label>
+
+	    {% endfor %}
+
+	    <input type=submit value=Share>
+    </form>		
+
+
+
+	</div>
+</div>
+
+{% endblock %}

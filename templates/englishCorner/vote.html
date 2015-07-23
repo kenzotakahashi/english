@@ -1,0 +1,18 @@
+{% extends "englishCorner/ecBase.html" %}
+{% block body %}
+
+
+<div id="main">
+  <div class="header">
+      <h1>Session2(June 25)</h1>
+  </div>
+
+  <div class="content">
+
+	  <div><a href="{{ url_for('voteJapanese') }}">I am Korean</a></div>
+	  <div><a href="{{ url_for('voteKorean') }}">I am Japanese</a></div>
+
+	</div>
+</div>
+
+{% endblock %}
