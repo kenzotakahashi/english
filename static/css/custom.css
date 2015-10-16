@@ -135,6 +135,12 @@ iframe {
     display: block;
 }
 
+.box {
+	border: 1px solid;
+	padding: .2em;
+	margin: .3em;	
+}
+
 
 /* ============== English Corner =================== */
 
