@@ -162,6 +162,9 @@ def vowels(name):
 def consonants(name):
 	return render_template('posts/発音/consonants/' + name + '.html')
 
+@app.route('/resources')
+def resources():
+	return render_template('resources.html')
 
 # @app.route('/ec/vote')
 # def vote():
