@@ -6,13 +6,15 @@ h1, h2, .pure-menu {
 	font-family: Helvetica, Verdana, sans-serif;
 }
 
-h1, h2 {
+h1 {
     margin: 30px 0 20px 0;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 h2 {
-	font-size: 1.3em;
+	margin: 30px 0 20px 0;
+	font-size: 1em;
+	font-weight: 600;
 }
 
 /* responsive video */
