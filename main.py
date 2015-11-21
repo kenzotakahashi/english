@@ -154,6 +154,10 @@ def post(name):
 def pronunciationPost(name):
 	return render_template('posts/発音/' + name + '.html')
 
+@app.route('/article/<name>')
+def articlePost(name):
+	return render_template('posts/article/' + name + '.html')	
+
 @app.route('/pronunciation/vowels/<name>')
 def vowels(name):
 	return render_template('posts/発音/vowels/' + name + '.html')
@@ -165,6 +169,13 @@ def consonants(name):
 @app.route('/resources')
 def resources():
 	return render_template('resources.html')
+
+@app.route('/article')
+def article():
+	posts = [
+		("英文を構築するプロセス","英文を構築するプロセス")
+	]
+	return render_template('article.html', posts=posts)
 
 # @app.route('/ec/vote')
 # def vote():
