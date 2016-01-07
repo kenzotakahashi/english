@@ -170,6 +170,17 @@ def consonants(name):
 def resources():
 	return render_template('resources.html')
 
+@app.route('/writing/<name>')
+def writingPost(name):
+	return render_template('posts/writing/' + name + '.html')	
+
+@app.route('/writing')
+def writing():
+	posts = [
+		("Poor and traumatized at Harvard","poor_and_traumatized_at_harvard")
+	]
+	return render_template('writing.html', posts=posts)
+
 @app.route('/article')
 def article():
 	posts = [
@@ -177,40 +188,6 @@ def article():
 	]
 	return render_template('article.html', posts=posts)
 
-# @app.route('/ec/vote')
-# def vote():
-# 	return render_template('englishCorner/vote.html')
-
-# @app.route('/ec/vote/japanese', methods=['GET', 'POST'])
-# def voteJapanese():
-# 	japanese = ["Saki","Asuka","Dai","Yuri","Nozomi","Yutori","Maki","Kodai","Rira","Ko","Shun","Misato","Miku","Yujiro","Sayaka","Susumu","Kohtaroh","Aoi"]
-# 	checked = []
-# 	error, success = None, None
-
-# 	if request.method == 'POST':
-# 		for i in japanese:
-# 			check = request.form.get(i)
-# 			if check:
-# 				checked.append(i)
-# 		if len(checked) > 3:
-# 			error = "You may not choose more than 3 students!"
-# 		elif len(checked) == 1:
-# 			error = "You must choose at least 1 student!"
-# 		else:
-# 			success = checked
-
-# 	return render_template('englishCorner/voteJapanese.html', japanese=japanese, error=error, success=success)
-
-# @app.route('/ec/vote/korean', methods=['GET', 'POST'])
-# def voteKorean():
-# 	korean = ["Nam Yeon Jae","Yun Gyeong Lee(Celina)","Jisuk Park","Jong Bok Lee","Hyerin Joo(Joo)","Hwan Ju Oh","Min Kyung Kim","Jae Hyung Jin","Da-seul Byun(Trudy)","Seung Hwan Lee","Arim Lee(Tina)","Seowoo Park","Jong Hun Yu","Yu Been Lee","Ju Yeon Kim","Junhyeong Lee","Hyeri Kim(Harry)","Eungyo Lee","Shinae Hwang","Daseul Lee"]
-
-# 	if request.method == 'POST':
-# 		for i in korean:
-# 			check = request.form.get(i)
-# 			print (check)
-
-# 	return render_template('englishCorner/voteKorean.html', korean=korean)
 
 
 if __name__ == '__main__':

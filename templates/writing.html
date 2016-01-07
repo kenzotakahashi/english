@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block body %}
+
+<div id="main">
+  <div class="header">
+      <h1>Writing Seminar</h1>
+  </div>
+
+  <div class="content">
+
+
+<p>One of the main goals of Writing Seminar is to improve your common app essay, but it is much more than that. Most of you have too little experience reading. Writing is about imitation just like anything else. You learn by imitating someone who is better than you. You cannot get better if you don't know what is good. Writing is also about critical thinking. Even if you know English well, your writing would still be mediocre if you cannot think rationally. Reading good English allows you to think hard. Therefore, this seminar is about reading as much as writing.</p>
+
+<p>This seminar is designed for those of you who completed my English Seminar 1-7 or have equivalent knowledge. Writing Seminar is different from English Seminar 1-7 in two ways:</p>
+
+<ul>
+	<li>It is hands-on class as opposed to lecture-based class. You are not going to learn a specific material. Instead, you will be reading and writing a lot. I will use a new reading material every time, so you can come to the seminar as many times as you want.</li>
+
+	<li>It is advanced. It will never be too easy for anyone because writing is a never-ending process. No matter what your level is, you can benefit from it.</li>
+</ul>
+
+<div class="content">
+	{% for post in posts %}
+    <div class="units">
+    	<a href="{{ url_for('writingPost', name=post[1], _external=True)}}">{{post[0]}}</a>
+    </div>
+	{% endfor %}  	
+</div>
+
+<br><br>
+
+  </div>
+</div>
+
+{% endblock %}
