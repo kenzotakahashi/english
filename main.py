@@ -177,7 +177,8 @@ def writingPost(name):
 @app.route('/writing')
 def writing():
 	posts = [
-		("Poor and traumatized at Harvard","poor_and_traumatized_at_harvard")
+		("Poor and traumatized at Harvard","poor_and_traumatized_at_harvard"),
+		("31 Things I’d Have Told Myself Before College","a-few-more-things-i-learned-in-college")
 	]
 	return render_template('writing.html', posts=posts)
 
