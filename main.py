@@ -178,7 +178,12 @@ def writingPost(name):
 def writing():
 	posts = [
 		("Poor and traumatized at Harvard","poor_and_traumatized_at_harvard"),
-		("31 Things I’d Have Told Myself Before College","a-few-more-things-i-learned-in-college")
+		("31 Things I’d Have Told Myself Before College","a-few-more-things-i-learned-in-college"),
+		("What hiring managers really want to know when they ask, 'What are your hobbies?'","when-job-interviewer-asks-about-hobbies"),
+		# ("",""),
+		# ("",""),
+		# ("",""),
+		# ("",""),
 	]
 	return render_template('writing.html', posts=posts)
 
