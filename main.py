@@ -181,7 +181,7 @@ def writing():
 		("31 Things I’d Have Told Myself Before College","a-few-more-things-i-learned-in-college"),
 		("What hiring managers really want to know when they ask, 'What are your hobbies?'","when-job-interviewer-asks-about-hobbies"),
 		("Your Life Is Tetris. Stop Playing It Like Chess.","your-life-is-tetris-stop-playing-it-like-chess"),
-		# ("",""),
+		("Laundry","laundry"),
 		# ("",""),
 		# ("",""),
 	]
