@@ -182,7 +182,7 @@ def writing():
 		("What hiring managers really want to know when they ask, 'What are your hobbies?'","when-job-interviewer-asks-about-hobbies"),
 		("Your Life Is Tetris. Stop Playing It Like Chess.","your-life-is-tetris-stop-playing-it-like-chess"),
 		("Laundry","laundry"),
-		# ("",""),
+		("What makes a good life? Lessons from the longest study on happiness","what_makes_a_good_life_lessons_from_the_longest_study_on_happiness"),
 		# ("",""),
 	]
 	return render_template('writing.html', posts=posts)
