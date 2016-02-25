@@ -183,6 +183,11 @@ def writing():
 		("Laundry","laundry"),
 		("What makes a good life? Lessons from the longest study on happiness","what_makes_a_good_life_lessons_from_the_longest_study_on_happiness"),
 		("Why the best hire might not have the perfect resume.","why_the_best_hire_might_not_have_the_perfect_resume"),
+		("Straight-A Students May Not Be the Best Innovators","straight-a-students-might-not-be-the-best-innovators"),
+		# ("",""),
+		# ("",""),
+		# ("",""),
+
 	]
 	return render_template('writing.html', posts=posts)
 
